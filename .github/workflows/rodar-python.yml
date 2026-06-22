@@ -1,0 +1,25 @@
+name: Executar Script Python via Make
+
+on:
+  repository_dispatch:
+    types: [disparar_via_make]
+
+jobs:
+  rodar-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar o código do Git
+      uses: actions/checkout@v4
+
+    - name: Configurar o Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Instalar dependências (Se houver)
+      run: |
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Executar o arquivo Python
+      run: python seu_arquivo.py # Se mudou o nome no passo 1, mude aqui também!
