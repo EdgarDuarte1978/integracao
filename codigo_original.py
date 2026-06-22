@@ -1,21 +1,21 @@
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import re
-import os
-import time
-import random
-from urllib.parse import urlparse, urljoin, parse_qs
-from google.colab import drive
+#import requests
+#from bs4 import BeautifulSoup
+#import pandas as pd
+#import re
+#import os
+#import time
+#import random
+#from urllib.parse import urlparse, urljoin, parse_qs
+#from google.colab import drive
 
 # ==========================================
 # 1. CONFIGURAÇÃO
 # ==========================================
-print("🔒 Solicitando acesso ao Google Drive...")
-if not os.path.exists('/content/drive'):
-    drive.mount('/content/drive')
-else:
-    print("✅ Google Drive já está montado.")
+#print("🔒 Solicitando acesso ao Google Drive...")
+#if not os.path.exists('/content/drive'):
+#    drive.mount('/content/drive')
+#else:
+#    print("✅ Google Drive já está montado.")
 
 USUARIO_PANDAPE = "edgarlduarte@gmail.com"
 SENHA_PANDAPE = "@Anbisaed01"
