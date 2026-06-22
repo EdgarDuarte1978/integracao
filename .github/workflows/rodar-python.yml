@@ -17,9 +17,15 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Instalar dependências (Se houver)
+    - name: Instalar dependências
       run: |
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
 
     - name: Executar o arquivo Python
-      run: python seu_arquivo.py # Se mudou o nome no passo 1, mude aqui também!
+      run: python seu_arquivo.py
+
+    - name: Salvar Relatório Gerado
+      uses: actions/upload-artifact@v4
+      with:
+        name: Relatorio-PandaPe
+        path: Relatorio_Final_PandaPe.csv
