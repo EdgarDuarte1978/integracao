@@ -27,9 +27,11 @@ URL_PUBLICADA_CSV = (
     "export?format=csv&gid=72172928"
 )
 #CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.xlsx"
-CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.csv"
+#CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.csv"
+CAMINHO_SAIDA_DRIVE = "Relatorio_Final_PandaPe.csv"
 # Define a pasta para salvar os currículos
-PASTA_CURRICULOS = "/content/drive/MyDrive/Pandape_Vagas/Curriculos_Baixados"
+#PASTA_CURRICULOS = "/content/drive/MyDrive/Pandape_Vagas/Curriculos_Baixados"
+PASTA_CURRICULOS = "Curriculos_Baixados"
 if not os.path.exists(PASTA_CURRICULOS):
     os.makedirs(PASTA_CURRICULOS)
 
@@ -467,7 +469,9 @@ if dados_finais:
         index=False,
         encoding="utf-8-sig"
     )
-    print(f"\n✅ CONCLUÍDO! Arquivos salvos em: {PASTA_CURRICULOS}")
-    display(df_res.head())
+    print(f"\n ✅ CONCLUÍDO! Arquivos salvos em: {PASTA_CURRICULOS}")
+    print(df_res.head())
+    #print(f"\n✅ CONCLUÍDO! Arquivos salvos em: {PASTA_CURRICULOS}")
+    #display(df_res.head())
 else:
     print("\n⚠️ Nenhum dado novo extraído.")
