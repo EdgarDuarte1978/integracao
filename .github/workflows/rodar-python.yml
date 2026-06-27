@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Executar o arquivo Python
-      run: python seu_arquivo.py
+      run: python codigo_original.py
 
     - name: Salvar Relatório Gerado
       uses: actions/upload-artifact@v4
