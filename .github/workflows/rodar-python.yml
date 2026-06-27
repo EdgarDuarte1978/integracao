@@ -3,6 +3,7 @@ name: Executar Script Python via Make
 on:
   repository_dispatch:
     types: [disparar_via_make]
+  workflow_dispatch: # 👈 ADICIONE ESTA LINHA EXATAMENTE AQUI
 
 jobs:
   rodar-script:
