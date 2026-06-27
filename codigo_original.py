@@ -1,12 +1,12 @@
-#import requests
-#from bs4 import BeautifulSoup
-#import pandas as pd
-#import re
-#import os
-#import time
-#import random
-#from urllib.parse import urlparse, urljoin, parse_qs
-#from google.colab import drive
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
+import os
+import time
+import random
+from urllib.parse import urlparse, urljoin, parse_qs
+from google.colab import drive
 
 # ==========================================
 # 1. CONFIGURAÇÃO
