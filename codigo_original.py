@@ -6,7 +6,7 @@ import os
 import time
 import random
 from urllib.parse import urlparse, urljoin, parse_qs
-from google.colab import drive
+#from google.colab import drive
 
 # ==========================================
 # 1. CONFIGURAÇÃO
