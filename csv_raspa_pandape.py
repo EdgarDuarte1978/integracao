@@ -500,7 +500,8 @@ if dados_finais:
         encoding="utf-8-sig"
     )
     print(f"\n✅ CONCLUÍDO! Arquivos salvos em: {PASTA_CURRICULOS}")
-    display(df_res.head())
+    #display(df_res.head())
+    print(df_res.head())
 else:
     print("\n⚠️ Nenhum dado novo extraído.")
 
