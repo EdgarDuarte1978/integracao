@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Executar o arquivo Python
-      run: python codigo_original.py
+      run: python csv_raspa_pandape.py
 
     - name: Salvar Relatório Gerado
       uses: actions/upload-artifact@v4
