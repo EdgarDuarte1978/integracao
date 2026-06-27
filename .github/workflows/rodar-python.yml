@@ -28,5 +28,7 @@ jobs:
     - name: Salvar Relatório Gerado
       uses: actions/upload-artifact@v4
       with:
-        name: Relatorio-PandaPe
-        path: Relatorio_Final_PandaPe.csv
+        name: Resultados-PandaPe
+        path: |
+          Relatorio_Final_PandaPe.csv
+          Curriculos_Baixados/
