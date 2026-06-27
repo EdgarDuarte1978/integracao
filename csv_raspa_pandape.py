@@ -42,11 +42,11 @@ from urllib.parse import urlparse, urljoin, parse_qs
 # ==========================================
 # 1. CONFIGURAÇÃO
 # ==========================================
-print("🔒 Solicitando acesso ao Google Drive...")
-if not os.path.exists('/content/drive'):
-    drive.mount('/content/drive')
-else:
-    print("✅ Google Drive já está montado.")
+#print("🔒 Solicitando acesso ao Google Drive...")
+#if not os.path.exists('/content/drive'):
+#    drive.mount('/content/drive')
+#else:
+#    print("✅ Google Drive já está montado.")
 
 USUARIO_PANDAPE = "edgarlduarte@gmail.com"
 SENHA_PANDAPE = "@Anbisaed01"
@@ -58,12 +58,13 @@ URL_PUBLICADA_CSV = (
     "export?format=csv&gid=72172928"
 )
 #CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.xlsx"
-CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.csv"
+#CAMINHO_SAIDA_DRIVE = "/content/drive/MyDrive/Pandape_Vagas/Relatorio_Final_PandaPe.csv"
+CAMINHO_SAIDA_DRIVE = "Relatorio_Final_PandaPe.csv"
 # Define a pasta para salvar os currículos
-PASTA_CURRICULOS = "/content/drive/MyDrive/Pandape_Vagas/Curriculos_Baixados"
-if not os.path.exists(PASTA_CURRICULOS):
-    os.makedirs(PASTA_CURRICULOS)
-
+#PASTA_CURRICULOS = "/content/drive/MyDrive/Pandape_Vagas/Curriculos_Baixados"
+#if not os.path.exists(PASTA_CURRICULOS):
+#    os.makedirs(PASTA_CURRICULOS)
+PASTA_CURRICULOS = "Curriculos_Baixados"
 NOME_COLUNA_URLS = "Link"
 
 meses = {
