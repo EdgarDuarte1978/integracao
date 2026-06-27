@@ -20,12 +20,12 @@ url
 resposta = requests.get(url)
 
 # Garante o download e registro correto das dependências do navegador no contêiner do Colab
-!pip install -q playwright beautifulsoup4 pandas openpyxl nest_asyncio
-!playwright install-deps
-!playwright install chromium
+#!pip install -q playwright beautifulsoup4 pandas openpyxl nest_asyncio
+#!playwright install-deps
+#!playwright install chromium
 
-!pip install playwright nest_asyncio pandas
-!playwright install chromium
+#!pip install playwright nest_asyncio pandas
+#!playwright install chromium
 
 
 
