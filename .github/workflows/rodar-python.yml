@@ -32,3 +32,4 @@ jobs:
         path: |
           Relatorio_Final_PandaPe.csv
           Curriculos_Baixados/
+        retention-days: 2
